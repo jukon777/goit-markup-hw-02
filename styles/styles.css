@@ -1,0 +1,38 @@
+body {
+    /* Головна */
+    position: relative;
+    width: 1600px;
+    height: 2346px;
+
+    background: #FFFFFF;
+}
+
+.header {
+    /* Верхня лінія */
+    position: absolute;
+    width: 1600px;
+    height: 80px;
+    left: 0px;
+    top: 0px;
+}
+
+.name,
+.name-title {
+    /* WebStudio */
+    position: absolute;
+    width: 145px;
+    height: 31px;
+    left: 215px;
+    top: 24px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+   /* identical to box height */
+
+    letter-spacing: 0.03em;
+
+    color: #2196F3;
+}
