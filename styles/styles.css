@@ -8,7 +8,7 @@ body {
 }
 
 .header {
-    /* Верхня лінія */
+    /* Хедер */
     position: absolute;
     width: 1600px;
     height: 80px;
@@ -16,8 +16,7 @@ body {
     top: 0px;
 }
 
-.name,
-.name-title {
+.name {
     /* WebStudio */
     position: absolute;
     width: 145px;
@@ -35,4 +34,109 @@ body {
     letter-spacing: 0.03em;
 
     color: #2196F3;
+}
+
+.menu-list {
+    /* Menu Nav */
+    position: absolute;
+    width: 281px;
+    height: 16px;
+    left: 453px;
+    top: 32px;
+}
+
+.mail-link {
+    /* E-mail */
+    position: absolute;
+    width: 135px;
+    height: 16px;
+    left: 1078px;
+    top: 32px;
+}
+
+.tel-link {
+    /* Tel */
+    position: absolute;
+    width: 122px;
+    height: 16px;
+    left: 1263px;
+    top: 32px;
+}
+
+.title {
+    /* Шапка */
+    position: absolute;
+    width: 1600px;
+    height: 600px;
+    left: 0px;
+    top: 80px;
+
+    background: #2F303A;
+}
+
+.title-name{
+    /* Ефективні рішення для вашого бізнесу */
+    padding: 200px 452px 280px;
+    width: 696px;
+    height: 120px;
+    left: 452px;
+    top: 280px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    /* or 136% */
+
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+button {
+    /* Button */
+    padding: 350px 692px 200px;
+    width: 216px;
+    height: 50px;
+    left: 692px;
+    top: 430px;
+}
+
+.describe {
+    /* Особливості */
+    position: absolute;
+    width: 1170px;
+    height: 98px;
+    left: 215px;
+    top: 774px;
+}
+
+.our-business {
+    /* Чим ми займаємося */
+    position: absolute;
+    width: 1170px;
+    height: 386px;
+    left: 215px;
+    top: 966px;
+}
+
+.our-command {
+    /* Наша команда */
+    position: absolute;
+    width: 1600px;
+    height: 648px;
+    left: 0px;
+    top: 1446px;
+}
+
+.footer {
+    /* Підвал */
+    position: absolute;
+    width: 1600px;
+    height: 252px;
+    left: 0px;
+    top: 2094px;
 }
