@@ -2,7 +2,11 @@ body {
     /* Головна */
     font-family: 'Raleway', sans-serif;
     font-family: 'Roboto', sans-serif;
-
+    position: relative;
+    width: 1600px;
+    height: 2346px;
+    
+    background: #FFFFFF;
 }
 
 .header {
