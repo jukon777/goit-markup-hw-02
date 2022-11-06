@@ -2,10 +2,7 @@ body {
     /* Головна */
     font-family: 'Raleway', sans-serif;
     font-family: 'Roboto', sans-serif;
-    position: relative;
-    width: 1600px;
-    height: 2346px;
-    background: #FFFFFF;
+
 }
 
 .header {
@@ -43,31 +40,38 @@ body {
     color: #2196F3;
 }
 
-.menu-list>.menu-item {
-    display: inline-block;
-    vertical-align: top;
+.menu-list {
+    position: absolute;
+    margin-left: 93px;
+    display: flex;
+    list-style: none;
+    margin: 32px 866px 32px 453px;
+    color: #212121;
 }
 
-.menu-list:hover,
+.menu-item:hover,
 .mail-link:hover,
 .tel-link:hover {
     color: #2196F3;
 }
 
-.menu-list {
+.menu-item {
     /* Menu Nav */
-    position: absolute;
-    width: 281px;
-    height: 16px;
-    left: 453px;
-    top: 32px;
-    
+    font-style: normal;
+    padding: 0px 50px;
+    text-decoration: none;
     color: #212121;
+
+}
+
+.menu-contacts {
+    list-style: none;
 }
 
 .mail-link {
     /* E-mail */
     position: absolute;
+    text-decoration: none;
     width: 135px;
     height: 16px;
     left: 1078px;
@@ -79,11 +83,14 @@ body {
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
+
+    color: #757575;
 }
 
 .tel-link {
     /* Tel */
     position: absolute;
+    text-decoration: none;
     width: 122px;
     height: 16px;
     left: 1263px;
@@ -112,7 +119,8 @@ body {
 
 .title-name{
     /* Ефективні рішення для вашого бізнесу */
-    padding: 200px 452px 280px;
+    font-style: normal;
+    margin: 200px 452px 280px;
     width: 696px;
     height: 120px;
     left: 452px;
@@ -182,7 +190,7 @@ body {
     top: 2094px;
 }
 
-/*Portfolio*/
+/*-------------Portfolio---------*/
 .portfolio-list {
     position: absolute;
     width: 575px;
@@ -194,6 +202,7 @@ body {
 }
 
 .portfolio-item {
+    display: inline-block;
     background: #F5F4FA;
     border-radius: 4px;
 }
@@ -203,8 +212,8 @@ body {
 }
 
 .portfolio-list>.portfolio-item {
-    display: inline-block;
-    vertical-align: top;
+
+
 }
 
 
