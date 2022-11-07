@@ -2,6 +2,7 @@ body {
     /* Головна */
     font-family: 'Raleway', sans-serif;
     font-family: 'Roboto', sans-serif;
+
     position: relative;
     width: 1600px;
     height: 2346px;
@@ -10,7 +11,7 @@ body {
 }
 
 .header {
-    /* Хедер */
+/*_____________________Header___________________*/
     position: absolute;
     width: 1600px;
     height: 80px;
@@ -32,9 +33,9 @@ body {
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+
     /* identical to box height */
-    
+    text-decoration: none;
     letter-spacing: 0.03em;
     
     color: #000000;
@@ -44,32 +45,28 @@ body {
     color: #2196F3;
 }
 
-.menu-list {
-    position: absolute;
-    margin-left: 93px;
-    display: flex;
+/*__________________Меню_____________________*/
+.menu-list,
+.menu-contacts {
     list-style: none;
-    margin: 32px 866px 32px 453px;
-    color: #212121;
+    padding: 0px;
+    border: none;
 }
 
-.menu-item:hover,
-.mail-link:hover,
-.tel-link:hover {
-    color: #2196F3;
+.menu-list {
+    position: absolute;
+    display: flex;
+    margin: 32px 866px 32px 453px;
+
+    color: #212121;
 }
 
 .menu-item {
-    /* Menu Nav */
     font-style: normal;
     padding: 0px 50px;
     text-decoration: none;
+
     color: #212121;
-
-}
-
-.menu-contacts {
-    list-style: none;
 }
 
 .mail-link {
@@ -110,8 +107,17 @@ body {
     color: #757575;
 }
 
+.menu-item:hover,
+.menu-item:focus,
+.mail-link:hover,
+.mail-link:focus,
+.tel-link:hover,
+.tel-link:focus {
+    color: #2196F3;
+}
+
 .title {
-    /* Шапка */
+ /*___________________Шапка____________________*/
     position: absolute;
     width: 1600px;
     height: 600px;
@@ -158,17 +164,40 @@ body {
     border-radius: 4px;
 }
 
+/* ___________________Особливості_________________________ */
+
 .describe {
-    /* Особливості */
-    position: absolute;
+    margin: 94px 215px ;
     width: 1170px;
     height: 98px;
     left: 215px;
     top: 774px;
 }
 
+.describe-title {
+    content-visibility: hidden;
+}
+
+.describe-list {
+    margin-top: 94px;
+    position: absolute;
+    display: flex;
+    list-style: none;
+
+    width: 1170px;
+    height: 98px;
+    left: 215px;
+    top: 774px;
+}
+
+.describe-item {
+
+}
+
+/*__________________Чим ми займаємося_______________*/
+
+
 .our-business {
-    /* Чим ми займаємося */
     position: absolute;
     width: 1170px;
     height: 386px;
@@ -176,8 +205,41 @@ body {
     top: 966px;
 }
 
+.our-business-title {
+    position: absolute;
+    width: 366px;
+    height: 42px;
+    left: 617px;
+    top: 966px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
+}
+
+.our-business-list {
+    display: flex;
+    list-style: none;
+}
+
+.pic-one {
+    position: absolute;
+    width: 370px;
+    height: 294px;
+    left: 215px;
+    top: 1058px;
+}
+
+
+
+/* __________________Наша команда_________________ */
 .our-command {
-    /* Наша команда */
     position: absolute;
     width: 1600px;
     height: 648px;
@@ -194,7 +256,7 @@ body {
     top: 2094px;
 }
 
-/*-------------Portfolio---------*/
+/*__________________Portfolio________________________*/
 .portfolio-list {
     position: absolute;
     width: 575px;
