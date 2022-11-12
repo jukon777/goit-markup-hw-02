@@ -1,83 +1,97 @@
+:root {
+    --brand-color: #000;
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --accent-text-color: #2196F3;
+    --background-color: #2F303A;
+    --background-button: #2196F3;
+}
+
+
 body {
     /* Головна */
     font-family: 'Raleway', sans-serif;
     font-family: 'Roboto', sans-serif;
-
     position: relative;
-    width: 1600px;
-    height: 2346px;
-    
+    height:2346px;
+    width:1600px;
+    padding:0px;
+
+    color: var(--primary-text-color);
     background: #FFFFFF;
 }
 
-.header {
 /*_____________________Header___________________*/
+.header {
+    margin: 0 auto;
     position: absolute;
     width: 1600px;
     height: 80px;
-    left: 0px;
-    top: 0px;
-    
+
     background: #FFFFFF;
 }
 
+/* WebStudio */
 .name-header {
-    /* WebStudio */
-    position: absolute;
+    margin: 24px 1240px 25px 215px;
+
     width: 145px;
     height: 31px;
-    left: 215px;
-    top: 24px;
+
+    position:absolute;
     
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
-
+    line-height: 31px;
     /* identical to box height */
-    text-decoration: none;
     letter-spacing: 0.03em;
-    
-    color: #000000;
+
+    text-decoration: none;
+    color: var(--brand-color);
 }
 
 .name-title {
-    color: #2196F3;
+    color: var(--accent-text-color);
 }
 
 /*__________________Меню_____________________*/
+
 .menu-list,
 .menu-contacts {
     list-style: none;
-    padding: 0px;
     border: none;
 }
 
 .menu-list {
-    position: absolute;
-    display: flex;
     margin: 32px 866px 32px 453px;
-
-    color: #212121;
+    padding-left: 0px;
+    width: 281px;
+    height: 16px;
+    display: flex;
+    justify-content: flex-start; 
+    flex-direction: row;
 }
 
 .menu-item {
-    font-style: normal;
-    padding: 0px 50px;
-    text-decoration: none;
+    margin-left: 0px;
+    padding-right: 50px;
 
-    color: #212121;
+    font-style: normal;
+    text-decoration: none;
+    color: var(--primary-text-color);
 }
 
-.mail-link {
+    /* Контакти з посиланнями*/
+
+
     /* E-mail */
-    position: absolute;
-    text-decoration: none;
+.mail-link {
+    margin: 32px 387px 2298px 1078px;
     width: 135px;
     height: 16px;
-    left: 1078px;
-    top: 32px;
-    
+
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -85,17 +99,15 @@ body {
     line-height: 16px;
     letter-spacing: 0.02em;
 
-    color: #757575;
+    text-decoration: none;
+    color: var(--secondary-text-color);
 }
 
-.tel-link {
     /* Tel */
-    position: absolute;
-    text-decoration: none;
+.tel-link {
+    margin: 32px 215px 32px 1263px;
     width: 122px;
     height: 16px;
-    left: 1263px;
-    top: 32px;
 
     font-family: 'Roboto';
     font-style: normal;
@@ -104,7 +116,8 @@ body {
     line-height: 16px;
     letter-spacing: 0.02em;
 
-    color: #757575;
+    text-decoration: none;
+    color: var(--secondary-text-color);
 }
 
 .menu-item:hover,
@@ -113,11 +126,11 @@ body {
 .mail-link:focus,
 .tel-link:hover,
 .tel-link:focus {
-    color: #2196F3;
+    color: var(--accent-text-color);
 }
 
-.title {
  /*___________________Шапка____________________*/
+.title {
     position: absolute;
     width: 1600px;
     height: 600px;
@@ -195,14 +208,16 @@ body {
 }
 
 /*__________________Чим ми займаємося_______________*/
-
-
 .our-business {
     position: absolute;
     width: 1170px;
     height: 386px;
     left: 215px;
     top: 966px;
+
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
 }
 
 .our-business-title {
@@ -226,6 +241,10 @@ body {
 .our-business-list {
     display: flex;
     list-style: none;
+/*test*/
+    display: flex;
+    align-items: stretch;
+    justify-content: left;
 }
 
 .pic-one {
