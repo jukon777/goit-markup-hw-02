@@ -52,7 +52,8 @@ body {
     color: var(--brand-color);
 }
 
-.name-title {
+.name-title,
+.name-footer {
     color: var(--accent-text-color);
 }
 
@@ -184,11 +185,7 @@ body {
 /* ___________________Особливості_________________________ */
 
 .describe {
-    margin: 94px 215px ;
-    width: 1170px;
-    height: 98px;
-    left: 215px;
-    top: 774px;
+    margin-top: 774px 215px 1474px 215px;
 }
 
 .describe-title {
@@ -196,9 +193,9 @@ body {
 }
 
 .describe-list {
-    margin-top: 94px;
     position: absolute;
     display: flex;
+    
     list-style: none;
 
     width: 1170px;
@@ -207,11 +204,55 @@ body {
     top: 774px;
 }
 
-.describe-item {
+.describe-list > h3 {
+    flex-flow: wrap row;
+    justify-content: flex-start;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--primary-text-color);
+}
+
+.describe-item > .describe-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
 
 }
 
 /*__________________Чим ми займаємося_______________*/
+
+.our-business-title {
+    margin: 0px;
+    position: absolute;
+    width: 366px;
+    height: 42px;
+    left: 402px;
+    top: 0px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: var(--primary-text-color);
+}
+
 .our-business {
     position: absolute;
     width: 1170px;
@@ -220,63 +261,119 @@ body {
     top: 966px;
 
     display: flex;
-    align-items: stretch;
-    justify-content: center;
-}
-
-.our-business-title {
-    position: absolute;
-    width: 366px;
-    height: 42px;
-    left: 617px;
-    top: 966px;
-
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
-    text-align: center;
-    letter-spacing: 0.03em;
-
-    color: #212121;
+    align-items: flex-end;
 }
 
 .our-business-list {
     display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
     list-style: none;
-/*test*/
-    display: flex;
-    align-items: stretch;
-    justify-content: left;
 }
 
-.pic-one {
-    position: absolute;
-    width: 370px;
-    height: 294px;
-    left: 215px;
-    top: 1058px;
+.our-business-item {
+    padding-right: 30px;
+
 }
-
-
 
 /* __________________Наша команда_________________ */
+.our-command-title {
+    position: absolute;
+    width: 264px;
+    height: 42px;
+    left: 668px;
+    top: 94px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--primary-text-color);
+}
+
 .our-command {
     position: absolute;
     width: 1600px;
     height: 648px;
     left: 0px;
     top: 1446px;
+
+    background: #F5F4FA;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }
 
+.our-command-list {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0px;
+    list-style: none;
+
+    width: 1170px;
+    height: 368px;
+    left: 215px;
+    top: 1632px;
+}
+
+.our-command-item {
+    padding-right: 30px;
+
+}
+
+.our-command-item > h3,
+.our-command-item > p {
+    display: flex;
+    justify-content: center;
+}
+
+/*___________________Підвал__________________________*/
 .footer {
-    /* Підвал */
     position: absolute;
     width: 1600px;
     height: 252px;
     left: 0px;
     top: 2094px;
+
+    background: var(--background-color);
+}
+
+.name-footer {
+    position: absolute;
+    width: 145px;
+    height: 31px;
+    left: 215px;
+    top: 60px;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+ /* identical to box height */
+
+    letter-spacing: 0.03em;
+
+    text-decoration: none;
+
+    color: #FFFFFF;
+}
+
+.adress-list {
+    list-style: none;
+    padding-left: 0px;
+
+    position: absolute;
+    width: 231px;
+    height: 81px;
+    left: 215px;
+    top: 111px;
 }
 
 /*__________________Portfolio________________________*/
