@@ -13,8 +13,8 @@ body {
     font-family: 'Raleway', sans-serif;
     font-family: 'Roboto', sans-serif;
     position: relative;
-    height:2346px;
-    width:1600px;
+    width: 1600px;
+    height: 2346px;
     padding:0px;
 
     color: var(--primary-text-color);
@@ -62,6 +62,7 @@ body {
 .menu-contacts {
     list-style: none;
     border: none;
+    cursor: pointer;
 }
 
 .menu-list {
@@ -84,13 +85,14 @@ body {
 }
 
     /* Контакти з посиланнями*/
-
-
     /* E-mail */
-.mail-link {
-    margin: 32px 387px 2298px 1078px;
+.contact-mail {
+    position: absolute;
     width: 135px;
     height: 16px;
+    top: 32px;
+    left: 1078px;
+
 
     font-family: 'Roboto';
     font-style: normal;
@@ -99,15 +101,16 @@ body {
     line-height: 16px;
     letter-spacing: 0.02em;
 
-    text-decoration: none;
+    text-decoration-line: none;
     color: var(--secondary-text-color);
 }
-
     /* Tel */
-.tel-link {
-    margin: 32px 215px 32px 1263px;
+.contact-tel {
+    position: absolute;
     width: 122px;
     height: 16px;
+    top: 32px;
+    left: 1263px;
 
     font-family: 'Roboto';
     font-style: normal;
@@ -116,7 +119,7 @@ body {
     line-height: 16px;
     letter-spacing: 0.02em;
 
-    text-decoration: none;
+    text-decoration-line: none;
     color: var(--secondary-text-color);
 }
 
@@ -137,13 +140,12 @@ body {
     left: 0px;
     top: 80px;
 
-    background: #2F303A;
+    background: var(--background-color);
 }
 
 .title-name{
     /* Ефективні рішення для вашого бізнесу */
-    font-style: normal;
-    margin: 200px 452px 280px;
+    padding: 200px 452px 280px;
     width: 696px;
     height: 120px;
     left: 452px;
@@ -170,9 +172,11 @@ body {
     height: 50px;
     left: 692px;
     top: 430px;
+
+    cursor: pointer;
     
     color: #FFFFFF;
-    background: #2196F3;
+    background: var(--background-button);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 }
