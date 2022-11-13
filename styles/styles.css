@@ -17,6 +17,8 @@ body {
     height: 2346px;
     padding:0px;
 
+    font-style: normal;
+
     color: var(--primary-text-color);
     background: #FFFFFF;
 }
@@ -76,18 +78,19 @@ body {
     flex-direction: row;
 }
 
-.menu-item {
+.menu-item,
+.link {
     margin-left: 0px;
     padding-right: 50px;
 
-    font-style: normal;
     text-decoration: none;
+
     color: var(--primary-text-color);
 }
 
     /* Контакти з посиланнями*/
     /* E-mail */
-.contact-mail {
+.mail-link {
     position: absolute;
     width: 135px;
     height: 16px;
@@ -96,17 +99,15 @@ body {
 
 
     font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
 
-    text-decoration-line: none;
     color: var(--secondary-text-color);
 }
     /* Tel */
-.contact-tel {
+.tel-link {
     position: absolute;
     width: 122px;
     height: 16px;
@@ -114,18 +115,22 @@ body {
     left: 1263px;
 
     font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
 
-    text-decoration-line: none;
     color: var(--secondary-text-color);
 }
 
-.menu-item:hover,
-.menu-item:focus,
+.link,
+.mail-link,
+.tel-link {
+    text-decoration: none;
+}
+
+.link:hover,
+.link:focus,
 .mail-link:hover,
 .mail-link:focus,
 .tel-link:hover,
@@ -153,7 +158,6 @@ body {
     top: 280px;
 
     font-family: 'Roboto';
-    font-style: normal;
     font-weight: 900;
     font-size: 44px;
     line-height: 60px;
@@ -180,6 +184,11 @@ body {
     background: var(--background-button);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+}
+
+.title button[type="button"]:hover,
+.title button[type="button"]:focus {
+    color: var(--accent-text-color);
 }
 
 /* ___________________Особливості_________________________ */
@@ -209,7 +218,6 @@ body {
     justify-content: flex-start;
 
     font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -221,7 +229,6 @@ body {
 
 .describe-item > .describe-text {
     font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
@@ -243,7 +250,6 @@ body {
     top: 0px;
     
     font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 42px;
@@ -286,7 +292,6 @@ body {
     top: 94px;
 
     font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 42px;
@@ -374,6 +379,47 @@ body {
     height: 81px;
     left: 215px;
     top: 111px;
+
+    text-decoration:none;
+}
+
+.adress-list .link:hover,
+.adress-list .link:focus {
+    color: var(--accent-text-color);
+}
+
+.adress-list a[href="https://goo.gl/maps/f6Jy9NrF3AqPm8kXA"] {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+    
+    letter-spacing: 0.03em;
+
+    text-decoration:none;
+    color: #fff;
+}
+
+.adress-list a[href="mailto:info@devstudio.com"],
+.adress-list a[href="tel:+380961111111"] {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration:none;
+}
+
+.adress-item:hover,
+.adress-item:focus {
+    color: var(--accent-text-color);
 }
 
 /*__________________Portfolio________________________*/
@@ -397,8 +443,7 @@ body {
     background-color: #2196F3;
 }
 
-.portfolio-list>.portfolio-item {
-
+.portfolio-list > .portfolio-item {
 
 }
 
