@@ -140,7 +140,7 @@ body {
 }
 
  /*___________________Шапка____________________*/
-.title {
+.hero {
     position: absolute;
     width: 1600px;
     height: 600px;
@@ -150,7 +150,7 @@ body {
     background: var(--background-color);
 }
 
-.title-name{
+.hero-title {
     /* Ефективні рішення для вашого бізнесу */
     padding: 200px 452px 280px;
     width: 696px;
@@ -171,7 +171,7 @@ body {
     color: #FFFFFF;
 }
 
-.title button[type="button"] {
+.hero button[type="button"] {
     /* Button */
     position: absolute;
     width: 216px;
@@ -187,8 +187,8 @@ body {
     border-radius: 4px;
 }
 
-.title button[type="button"]:hover,
-.title button[type="button"]:focus {
+.hero button[type="button"]:hover,
+.hero button[type="button"]:focus {
     color: var(--accent-text-color);
 }
 
