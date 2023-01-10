@@ -3,48 +3,33 @@
     --primary-text-color: #212121;
     --secondary-text-color: #757575;
     --accent-text-color: #2196F3;
+    --title-color: #FFFFFF;
     --background-color: #2F303A;
     --background-button: #2196F3;
     --background-portfolio: #F5F4FA;
+    --background-color-main: #ffffff;
 }
 
-
+    /* Main*/
 body {
-    /* Головна */
-    font-family: 'Raleway', sans-serif;
     font-family: 'Roboto', sans-serif;
-    position: relative;
-    width: 1600px;
-    height: 2346px;
-    padding:0px;
-
-    font-style: normal;
-
     color: var(--primary-text-color);
-    background: #FFFFFF;
+    background: var(--background-color-main);
+
+    margin: 0px;
 }
 
 /*_____________________Header___________________*/
 .header {
-    margin: 0 auto;
-    position: absolute;
-    width: 1600px;
-    height: 80px;
-
-    background: #FFFFFF;
+    color: var(--title-color);
 }
 
 /* WebStudio */
 .name-header {
-    margin: 24px 1240px 25px 215px;
-
-    width: 145px;
-    height: 31px;
-
-    position:absolute;
-    
+    display: inline-block;
+    margin-right: 93px;
+  
     font-family: 'Raleway';
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -53,6 +38,7 @@ body {
 
     text-decoration: none;
     color: var(--brand-color);
+   
 }
 
 .name-title,
@@ -61,85 +47,101 @@ body {
 }
 
 /*__________________Меню_____________________*/
+.container {
+    width: 1385px;
+    height: 80px;
+    padding-left: 215px;
+
+}
+
+.total-menu{
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu .menu-list:not(:last-child) {
+    margin-right: 50px;
+}
 
 .menu-list,
 .menu-contacts {
     list-style: none;
-    border: none;
-    cursor: pointer;
 }
 
 .menu-list {
-    margin: 32px 866px 32px 453px;
     padding-left: 0px;
-    width: 281px;
-    height: 16px;
+    margin: 0px;
+   
     display: flex;
     justify-content: flex-start; 
     flex-direction: row;
 }
 
-.menu-item,
-.link {
+.menu-item {
     margin-left: 0px;
     padding-right: 50px;
 
-    text-decoration: none;
 
+ }
+
+.link {
     color: var(--primary-text-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
-    /* Контакти з посиланнями*/
-    /* E-mail */
-.mail-link {
+.current-text {
+    color: var(--accent-text-color);
+}
+
+   /* Контакти, E-mail */
+.contact-mail {
     position: absolute;
     width: 135px;
     height: 16px;
     top: 32px;
     left: 1078px;
 
-
-    font-family: 'Roboto';
-    font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-
-    color: var(--secondary-text-color);
 }
     /* Tel */
-.tel-link {
+.contact-tel {
     position: absolute;
     width: 122px;
     height: 16px;
     top: 32px;
     left: 1263px;
 
-    font-family: 'Roboto';
-    font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+}
 
+.contacts-link {
     color: var(--secondary-text-color);
 }
 
 .link,
-.mail-link,
-.tel-link {
+.contacts-link {
     text-decoration: none;
+    font-weight: 500;
 }
 
 .link:hover,
 .link:focus,
-.mail-link:hover,
-.mail-link:focus,
-.tel-link:hover,
-.tel-link:focus {
+.contacts-link:hover,
+.contacts-link:focus {
     color: var(--accent-text-color);
 }
 
- /*___________________Шапка____________________*/
+ /*___________________Герой____________________*/
 .hero {
     position: absolute;
     width: 1600px;
@@ -147,18 +149,17 @@ body {
     left: 0px;
     top: 80px;
 
-    background: var(--background-color);
+    background-color: var(--background-color);
 }
 
 .hero-title {
-    /* Ефективні рішення для вашого бізнесу */
+   
     padding: 200px 452px 280px;
     width: 696px;
     height: 120px;
     left: 452px;
     top: 280px;
 
-    font-family: 'Roboto';
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -168,7 +169,7 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
-    color: #FFFFFF;
+    color: var(--title-color);
 }
 
 .hero button[type="button"] {
@@ -181,7 +182,7 @@ body {
 
     cursor: pointer;
     
-    color: #FFFFFF;
+    color: var(--title-color);
     background: var(--background-button);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -190,12 +191,13 @@ body {
 .hero button[type="button"]:hover,
 .hero button[type="button"]:focus {
     color: var(--accent-text-color);
+    background-color: var(--background-color-main);
 }
 
-/* ___________________Особливості_________________________ */
+/* ___________________ÐžÑÐ¾Ð±Ð»Ð¸Ð²Ð¾ÑÑ‚Ñ–_________________________ */
 
 .describe {
-    margin-top: 774px 215px 1474px 215px;
+    margin: 774px 215px 1474px;
 }
 
 .describe-title {
@@ -203,22 +205,24 @@ body {
 }
 
 .describe-list {
-    position: absolute;
+
+    padding-left: 0;
     display: flex;
     
     list-style: none;
 
     width: 1170px;
     height: 98px;
-    left: 215px;
-    top: 774px;
+
 }
 
-.describe-list > h3 {
+.describe-item > h3 {
     flex-flow: wrap row;
     justify-content: flex-start;
 
-    font-family: 'Roboto';
+    width: 270px;
+    height: 16px;
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -229,7 +233,12 @@ body {
 }
 
 .describe-item > .describe-text {
-    font-family: 'Roboto';
+    flex-flow: wrap row;
+    justify-content: flex-start;
+
+    width: 270px;
+    height: 72px;
+
     font-weight: 400;
     font-size: 14px;
     line-height: 1.5;
@@ -240,7 +249,7 @@ body {
 
 }
 
-/*__________________Чим ми займаємося_______________*/
+/*__________________Наш бізнес______________*/
 
 .our-business-title {
     margin: 0px;
@@ -250,7 +259,6 @@ body {
     left: 402px;
     top: 0px;
     
-    font-family: 'Roboto';
     font-weight: 700;
     font-size: 32px;
     line-height: 1.3;
@@ -292,7 +300,6 @@ body {
     left: 668px;
     top: 94px;
 
-    font-family: 'Roboto';
     font-weight: 700;
     font-size: 32px;
     line-height: 1.3;
@@ -339,7 +346,7 @@ body {
     justify-content: center;
 }
 
-/*___________________Підвал__________________________*/
+/*___________________ÐŸÑ–Ð´Ð²Ð°Ð»__________________________*/
 .footer {
     position: absolute;
     width: 1600px;
@@ -390,8 +397,6 @@ body {
 }
 
 .adress-list a[href="https://goo.gl/maps/f6Jy9NrF3AqPm8kXA"] {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -405,8 +410,6 @@ body {
 
 .adress-list a[href="mailto:info@devstudio.com"],
 .adress-list a[href="tel:+380961111111"] {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -447,7 +450,6 @@ body {
     display: inline-block;
     padding-right: 8px;
 
-    font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
