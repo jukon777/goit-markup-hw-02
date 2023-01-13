@@ -8,6 +8,7 @@
     --background-button: #2196F3;
     --background-portfolio: #F5F4FA;
     --background-color-main: #ffffff;
+    --background-color-active: #188CE8;
 }
 
     /* Main*/
@@ -15,8 +16,8 @@ body {
     font-family: 'Roboto', sans-serif;
     color: var(--primary-text-color);
     background: var(--background-color-main);
-
     margin: 0px;
+    font-size: 14px;
 }
 
 /*_____________________Header___________________*/
@@ -76,7 +77,6 @@ body {
 
 .menu-list {
     padding-left: 0px;
-
    
     display: flex;
     justify-content: flex-start; 
@@ -86,14 +86,20 @@ body {
 .menu-item {
     margin-left: 0px;
     padding-right: 50px;
-
-
  }
 
 .link {
     color: var(--primary-text-color);
     padding-top: 32px;
     padding-bottom: 32px;
+
+    text-decoration: none;
+
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+
+    color: var(--primary-text-color);
 }
 
 .current-text {
@@ -105,40 +111,50 @@ body {
     position: absolute;
     width: 135px;
     height: 16px;
-    top: 32px;
     left: 1078px;
+    top: 32px;    
+}
 
-    font-size: 14px;
-    line-height: 1.14;
+.contacts-mail {
+    line-height: 16px;
     letter-spacing: 0.02em;
+
+    color: var(--secondary-text-color);
 }
     /* Tel */
 .contact-tel {
     position: absolute;
     width: 122px;
     height: 16px;
-    top: 32px;
     left: 1263px;
+    top: 32px;    
+}
 
-    font-size: 14px;
-    line-height: 1.14;
+.contacts-tel {
+    line-height: 16px;
     letter-spacing: 0.02em;
+
+    color: var(--secondary-text-color);
 }
 
 .contacts-link {
     color: var(--secondary-text-color);
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 
-.link,
-.contacts-link {
+.contacts-mail,
+.contacts-tel {
     text-decoration: none;
     font-weight: 500;
 }
 
 .link:hover,
 .link:focus,
-.contacts-link:hover,
-.contacts-link:focus {
+.contacts-mail:hover,
+.contacts-mail:focus,
+.contacts-tel:hover,
+.contacts-tel:focus {
     color: var(--accent-text-color);
 }
 
@@ -177,19 +193,20 @@ body {
     height: 50px;
     left: 692px;
     top: 430px;
-
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.8;
     cursor: pointer;
-    
     color: var(--title-color);
-    background: var(--background-button);
+    background-color: var(--background-button);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 }
 
 .hero button[type="button"]:hover,
 .hero button[type="button"]:focus {
-    color: var(--accent-text-color);
-    background-color: var(--background-color-main);
+    color: var(--title-color);
+    background-color: var(--background-color-active);
 }
 
 /* ___________________Особливості_________________________ */
@@ -372,7 +389,7 @@ body {
     justify-content: center;
 }
 
-.pic-worker{
+.pic-worker {
     width: 270px;
     height: 368px;
 
@@ -413,7 +430,7 @@ body {
     color: #FFFFFF;
 }
 
-.adress-list {
+.address-list {
     margin-left: 215px;
 
     padding-left: 0px;
@@ -428,12 +445,12 @@ body {
     text-decoration:none;
 }
 
-.adress-list .link:hover,
-.adress-list .link:focus {
+.contact-link:hover,
+.contact-link:focus {
     color: var(--accent-text-color);
 }
 
-.adress-list a[href="https://goo.gl/maps/f6Jy9NrF3AqPm8kXA"] {
+.address-list a[href="https://goo.gl/maps/f6Jy9NrF3AqPm8kXA"] {
     width: 231px;
     height: 21px;
     font-weight: 400;
@@ -447,8 +464,7 @@ body {
     color: #fff;
 }
 
-.adress-list a[href="mailto:info@devstudio.com"],
-.adress-list a[href="tel:+380961111111"] {
+.contact-link {
     width: 231px;
     height: 21px;
     font-weight: 400;
@@ -462,8 +478,8 @@ body {
     text-decoration:none;
 }
 
-.adress-item:hover,
-.adress-item:focus {
+.address-item:hover,
+.address-item:focus {
     color: var(--accent-text-color);
 }
 
@@ -474,27 +490,53 @@ body {
 
     width: 1170px;
     height: 1360px;
+}
 
+.portfolio-box {
+    margin: 94px 0 0 297px;
+    padding-left: 0;
+    width: 575px;
+    height: 54px;
 }
 
 .portfolio-list {
-    margin: 94px 0 0 297px;
+    margin: 0;
     padding-left: 0;
-
-    width: 575px;
-    height: 54px;
     list-style: none;
+    display: flex;
+}
 
-    color: #212121;
+.portfolio-list button[type="button"]:hover,
+.portfolio-list button[type="button"]:focus {
+    background-color: var(--accent-text-color);
+    color: var(--title-color);
+}
+
+.portfolio-list button[type="button"] {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    width: auto;
+    height: 38px;
+    background-color: var(--background-portfolio);
+    border-radius: 4px;
+    border: 0;
+
+    cursor: pointer;
 }
 
 .portfolio-item {
-    display: inline-block;
     padding-right: 8px;
+}
 
+.portf-button {
+    width: auto;
+    height: 26px;
+
+    font-family: 'Roboto';
+    font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.62;
+    line-height: 1.6;
     /* identical to box height, or 162% */
     
     text-align: center;
@@ -504,23 +546,6 @@ body {
 
 }
 
-.portfolio-list button[type="button"]:hover {
-    background-color: var(--accent-text-color);
-    color: var(--title-color);
-}
-
-.portfolio-list button[type="button"] {
-    padding: 6px 22px;
-    width: auto;
-    height: 38px;
-
-    background-color: var(--background-portfolio);
-    border-radius: 4px;
-
-    border: 0;
-
-    cursor: pointer;
-}
 
 .photo-list {
     margin: 0;
