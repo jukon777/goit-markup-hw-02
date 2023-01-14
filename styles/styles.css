@@ -22,6 +22,8 @@ body {
 
 /*_____________________Header___________________*/
 .header {
+    width: 1600px;
+    height: 80px;
     color: var(--title-color);
 }
 
@@ -39,7 +41,6 @@ body {
 
     text-decoration: none;
     color: var(--brand-color);
-   
 }
 
 .name-title,
@@ -504,52 +505,41 @@ body {
     padding-left: 0;
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-.portfolio-list button[type="button"]:hover,
-.portfolio-list button[type="button"]:focus {
+.portf-button:hover,
+.portf-button:focus {
     background-color: var(--accent-text-color);
     color: var(--title-color);
 }
 
-.portfolio-list button[type="button"] {
-    padding-top: 6px;
-    padding-bottom: 6px;
+.portf-button {
+    padding: 6px 22px;
     width: auto;
     height: 38px;
-    background-color: var(--background-portfolio);
     border-radius: 4px;
     border: 0;
-
     cursor: pointer;
-}
-
-.portfolio-item {
-    padding-right: 8px;
-}
-
-.portf-button {
-    width: auto;
-    height: 26px;
-
     font-family: 'Roboto';
-    font-style: normal;
+    /* font-style: normal; */
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
     /* identical to box height, or 162% */
-    
     text-align: center;
-    letter-spacing: 0.03em;
-    
+    /* letter-spacing: 0.03em; */
     color: var(--primary-text-color);
+    background-color: var(--background-portfolio);
+}
+
+.portfolio-item {
+    padding-right: 8px;
 
 }
 
-
 .photo-list {
-    margin: 0;
+    margin-top: 34px;
     padding-left: 0;
     list-style: none;
     display: flex;
